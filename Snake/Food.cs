@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Food
+   public class Food
     {
         public Point location;
         public char sign = '♠';

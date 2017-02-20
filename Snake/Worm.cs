@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Worm
+ public  class Worm
     {
+    
         public char sign = '*';
         public List<Point> body = new List<Point>();
         public bool isAlive = true;
+        public void Start()
+        {
+            body.Add(new Point(10, 10)); 
+        }
         public Worm()
         {
-            body.Add(new Point(10, 10));
         }
+        
         public void Draw()
         {
             for (int i = 0; i < body.Count; ++i)
